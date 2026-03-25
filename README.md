@@ -14,6 +14,9 @@ Como hemos eliminado boostrap podemos eliminar el "!important" ya que es complet
 > CAMBIO 5:  BOTÓN INDEX
 
 Cambiamos el botón por el creado anteriormente.
-> CAMBIO 5:  BOTÓN INDEX
+> CAMBIO 6:  BOTÓN INDEX
 
 Separamos el CSS del HTML en diferentes archivos para así mejorar la velocidad de carga y para que la web pese menos.
+
+
+Todos estos cambios ayudan a que la web pese menos y sea más sostenible al usar herramientas que no cargen gran cantidad de recursos y optimizar el código.
