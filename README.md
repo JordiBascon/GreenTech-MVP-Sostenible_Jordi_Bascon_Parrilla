@@ -1,22 +1,32 @@
-# GreenTech-MVP-Sostenible_Jordi_Bascon_Parrilla
-> CAMBIO 1: BOOSTRAP
+# GreenTech: MVP Sostenible
+**Alumno:** Jordi Bascón Parrilla  
 
-He eliminado la dependencia a bootstrap y reemplazado por CSS nativo para reducir el peso del archivo ya que no se descargan las miles de líneas de código inútiles que tiene boostrap solo para la implementación de un botón.
-> CAMBIO 2: GOOGLE FONTS
+---
 
-Utilización de fuentes del sistema para así no cargar las fuentes de  GoogleFonts.
-> CAMBIO 3: IMAGEN
+## Filosofía del Proyecto
+Este trabajo se centra en la aplicación de buenas prácticas de **Green Computing**. El objetivo principal ha sido refactorizar el MVP original para eliminar dependencias innecesarias, reducir el peso de transferencia de datos y optimizar el tiempo de renderizado en el cliente.
 
-La imagen anterior estaba con un enlace el cual añadía mucho peso al archivo. Para liberar espacio utilizaremos una imagen local en un archivo con extensión .webp el cual eliminará carga de la web.
-> CAMBIO 4: BOTÓN CSS
+## Optimizaciones Implementadas
 
-Como hemos eliminado boostrap podemos eliminar el "!important" ya que es completamente innecesario.
-> CAMBIO 5:  BOTÓN INDEX
+### 1. Sustitución de Frameworks por CSS Nativo
+Se ha eliminado la dependencia de **Bootstrap** para evitar la carga de miles de líneas de código no utilizado. 
+* **Resultado:** Reducción drástica del peso del archivo y mayor control sobre los estilos.
+* **Impacto:** Menor consumo de recursos al procesar el CSS.
 
-Cambiamos el botón por el creado anteriormente.
-> CAMBIO 6:  BOTÓN INDEX
+### 2. Gestión Eficiente de Tipografías
+Se ha prescindido de **Google Fonts** en favor de fuentes del sistema.
+* **Resultado:** Eliminación de peticiones HTTP externas.
+* **Impacto:** Mejora en la privacidad del usuario y carga instantánea de textos.
 
-Separamos el CSS del HTML en diferentes archivos para así mejorar la velocidad de carga y para que la web pese menos.
+### 3. Optimización de Imagenes
+Sustitución de imágenes externas por archivos locales en formato **.webp**.
+* **Resultado:** Reducción significativa del tiempo de carga sin comprometer la calidad de las imágenes en el navegador.
+* **Impacto:** Reducción del ancho de banda necesario para visualizar la web.
 
+### 4. Refactorización y Calidad de Código
+* **Limpieza de Especificidad:** Tras eliminar Bootstrap, se ha eliminado el uso de `!important` en el CSS, permitiendo una jerarquía de estilos más limpia y profesional.
+* **Separación del CSS:** Se ha separado el CSS del archivo HTML principal.
+* **Resultado:** Mejora en la mantenibilidad del código y aprovechamiento del almacenamiento en la caché del navegador.
 
-Todos estos cambios ayudan a que la web pese menos y sea más sostenible al usar herramientas que no cargen gran cantidad de recursos y optimizar el código.
+## Conclusión de Sostenibilidad
+Al reducir el peso total de la web, el sitio no solo es más rápido, sino que consume menos energía tanto en el servidor como en el dispositivo del usuario que abra la web.
